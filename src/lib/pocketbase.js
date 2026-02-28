@@ -1,9 +1,6 @@
 import PocketBase from 'pocketbase';
 
-// Initialize PocketBase with your backend URL
-// Replace 'YOUR_POCKETBASE_URL' with the actual URL of your PocketBase instance
-// For example: 'http://127.0.0.1:8090'
-export const pb = new PocketBase('http://127.0.0.1:8090');
+export const pb = new PocketBase('https://pocketbasedb-production.up.railway.app');
 
 // Optional: Set a custom store for authStore to persist user sessions
 // For example, using localStorage (default is also localStorage but this makes it explicit)
