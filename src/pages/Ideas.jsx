@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import PocketBase from 'pocketbase';
+import { pb } from '../lib/pocketbase';
 import Header from '../components/Header';
 import IdeaCard from '../components/IdeaCard';
 import IdeaForm from '../components/IdeaForm';
-
-const pb = new PocketBase('http://127.0.0.1:8090'); // Replace with your PocketBase URL
 
 function Ideas() {
   const [ideas, setIdeas] = useState([]);
